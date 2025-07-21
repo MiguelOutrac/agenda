@@ -18,8 +18,17 @@
     </div>
     <div>
         <label for="TP">Tipo</label>
-        <input id = "TP" type="Tipo" #tp>
+        <select name="TP" id="tipo" #tp>
+            <option value="Amigo">Amigo(a)</option>
+            <option value="Familia">Familia</option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Outro">Outro</option>
+        </select>
     </div>
     <div><input type="button" value="Adicionar" (click)="AdicionarContato(nm.value, +tf.value, em.value, an.value, tp.value)"></div>
     <div></div>
 </form>
+
+<table>
+    {{contatos}}
+</table>

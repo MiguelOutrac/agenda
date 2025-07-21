@@ -1,5 +1,3 @@
-import { Tipo } from "./tipo"
-
 export class Contato{
   nome: string 
   telefone: number 
@@ -14,12 +12,4 @@ export class Contato{
     this.tipo = tp 
   }
  
-  obterContato(){
-    return this.nome
-    return this.telefone
-    return this.email
-    return this.aniversario
-    return this.tipo
-
-  }
 }
