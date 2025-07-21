@@ -1,0 +1,25 @@
+<h1>Agenda</h1>
+<form>
+    <div>
+        <label for="NM">Nome</label>
+        <input id = "NM" type="text" #nm>
+    </div>
+    <div>
+        <label for="TF">Telefone</label>
+        <input id = "TF" type="number" #tf>
+    </div>
+    <div>
+        <label for="EM">E-mail</label>
+        <input id = "EM" type="text" #em>
+    </div>
+    <div>
+        <label for="AN">Aniversário</label>
+        <input id = "AN" type="date" #an>
+    </div>
+    <div>
+        <label for="TP">Tipo</label>
+        <input id = "TP" type="Tipo" #tp>
+    </div>
+    <div><input type="button" value="Adicionar" (click)="AdicionarContato(nm.value, +tf.value, em.value, an.value, tp.value)"></div>
+    <div></div>
+</form>
