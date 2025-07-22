@@ -12,4 +12,5 @@ export class Contato{
     this.tipo = tp 
   }
  
+  
 }
